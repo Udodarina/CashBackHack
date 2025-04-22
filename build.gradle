@@ -11,8 +11,12 @@ repositories {
 
 dependencies {
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter',version: '5.5.2'
-}
+    testImplementation 'org.testng:testng:7.1.0' // Зависимость для TestNG
+    testImplementation 'junit:junit:4.13.2' // Зависимость для JUnit4
+     }
 
 test {
     useJUnitPlatform()
+    useTestNG() // Указываем, что будем использовать TestNG
+    useJUnit()
 }

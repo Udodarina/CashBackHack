@@ -1,13 +1,12 @@
-package ru.netology.service;
+package ru.netology.service; // Указываем пакет
 
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+//import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test; // Импортируем аннотацию Test
+import static org.junit.jupiter.api.Assertions.*; // Импортируем статические методы для ассертов
 
-import static org.junit.jupiter.api.Assertions.*;
+class CashbackHackServiceTest { // Определяем класс тестов
 
-class CashbackHackServiceTest {
-
-    @Test
+    @Test // Указываем, что это тестовый метод
     void remain() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
